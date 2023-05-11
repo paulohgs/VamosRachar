@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VamosRachar</string>
+    <string name="bot_o_para_compartilhar_valor_a_ser_dividido_entre_todos">Botão para compartilhar valor a ser dividido entre todos</string>
+    <string name="r_0_00">R$ 0.00</string>
+    <string name="bot_o_para_reproduzir_pelo_tts_o_valor_a_ser_dividido_para_todos">Botão para reproduzir pelo tts o valor a ser dividido para todos</string>
+    <string name="quantidade_de_pessoas">Quantidade de pessoas</string>
+    <string name="valor_a_ser_dividido">Valor a ser dividido</string>
+</resources>

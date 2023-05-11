@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/valor_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="R$ 0.00"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/campo_valor2"
+        app:layout_constraintStart_toStartOf="@+id/campo_valor2"
+        app:layout_constraintTop_toBottomOf="@+id/campo_valor2" />
+
+    <TextView
+        android:id="@+id/title_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Vamos rachar?"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/campo_valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_app">
+
+        <EditText
+            android:id="@+id/value_to_divide"
+            android:layout_width="288dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Valor para dividir"
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/campo_valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/campo_valor1"
+        app:layout_constraintStart_toStartOf="@+id/campo_valor1"
+        app:layout_constraintTop_toBottomOf="@+id/campo_valor1">
+
+        <EditText
+            android:id="@+id/people_quantity"
+            android:layout_width="288dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Número de pessoas"
+            android:inputType="numberDecimal"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/floating_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/campo_valor2"
+        app:layout_constraintStart_toStartOf="@+id/campo_valor2"
+        app:layout_constraintTop_toBottomOf="@+id/valor_resultado">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/play_tts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Botão para dizer o valor a ser dividido entre todas as pessoas"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/share_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Botão para compartilhar o valor a ser dividido para todos"
+            android:onClick="onShareClick"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
