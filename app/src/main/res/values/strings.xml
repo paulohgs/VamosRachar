@@ -5,4 +5,10 @@
     <string name="bot_o_para_reproduzir_pelo_tts_o_valor_a_ser_dividido_para_todos">Botão para reproduzir pelo tts o valor a ser dividido para todos</string>
     <string name="quantidade_de_pessoas">Quantidade de pessoas</string>
     <string name="valor_a_ser_dividido">Valor a ser dividido</string>
+    <string name="r_0_00_1">R$ 0.00</string>
+    <string name="vamos_rachar">Vamos rachar?</string>
+    <string name="valor_para_dividir">Valor para dividir</string>
+    <string name="n_mero_de_pessoas">Número de pessoas</string>
+    <string name="bot_o_para_dizer_o_valor_a_ser_dividido_entre_todas_as_pessoas">Escutar valor total</string>
+    <string name="bot_o_para_compartilhar_o_valor_a_ser_dividido_para_todos">Compartilhar valor total</string>
 </resources>

@@ -5,7 +5,6 @@
     android:id="@+id/main_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009688"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:text="R$ 0.00"
+        android:text="@string/r_0_00_1"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="@+id/campo_valor2"
         app:layout_constraintStart_toStartOf="@+id/campo_valor2"
@@ -24,7 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Vamos rachar?"
+        android:autoSizeTextType="uniform"
+        android:text="@string/vamos_rachar"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
@@ -45,11 +45,15 @@
 
         <EditText
             android:id="@+id/value_to_divide"
-            android:layout_width="288dp"
-            android:layout_height="60dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:autoSizeMinTextSize="30dp"
+            android:autoSizeTextType="uniform"
+            android:autofillHints="numberDecimal"
             android:ems="10"
-            android:hint="Valor para dividir"
+            android:hint="@string/valor_para_dividir"
             android:inputType="numberDecimal"
             android:textSize="24sp" />
     </LinearLayout>
@@ -66,11 +70,15 @@
 
         <EditText
             android:id="@+id/people_quantity"
-            android:layout_width="288dp"
-            android:layout_height="62dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:autoSizeMinTextSize="30dp"
+            android:autoSizeTextType="uniform"
+            android:autofillHints="numberDecimal"
             android:ems="10"
-            android:hint="Número de pessoas"
+            android:hint="@string/n_mero_de_pessoas"
             android:inputType="numberDecimal"
             android:textSize="24sp" />
 
@@ -92,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:contentDescription="Botão para dizer o valor a ser dividido entre todas as pessoas"
+            android:contentDescription="@string/bot_o_para_dizer_o_valor_a_ser_dividido_entre_todas_as_pessoas"
             app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
         <Space
@@ -107,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:contentDescription="Botão para compartilhar o valor a ser dividido para todos"
+            android:contentDescription="@string/bot_o_para_compartilhar_o_valor_a_ser_dividido_para_todos"
             android:onClick="onShareClick"
             app:srcCompat="@android:drawable/ic_menu_share" />
     </LinearLayout>
