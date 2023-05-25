@@ -101,6 +101,7 @@
             android:layout_weight="1"
             android:clickable="true"
             android:contentDescription="@string/bot_o_para_dizer_o_valor_a_ser_dividido_entre_todas_as_pessoas"
+            app:backgroundTint="?colorPrimary"
             app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
         <Space
@@ -117,6 +118,7 @@
             android:clickable="true"
             android:contentDescription="@string/bot_o_para_compartilhar_o_valor_a_ser_dividido_para_todos"
             android:onClick="onShareClick"
+            app:backgroundTint="?colorPrimary"
             app:srcCompat="@android:drawable/ic_menu_share" />
     </LinearLayout>
 
