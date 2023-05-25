@@ -1,6 +1,8 @@
 # VamosRachar
 VamosRachar é uma aplicação nativa Android feita em Kotlin que ajuda as pessoas a dividir uma conta entre um número de pessoas especificado. Com essa aplicação, os usuários podem calcular o valor da conta com facilidade e rapidez, evitando conflitos e mal-entendidos.
 
+[Pasta com vídeos das aplicações](https://ufcbr-my.sharepoint.com/:f:/g/personal/paulohgs_alu_ufc_br/Ety1v7Jj5LhAmUz2sgtf-ToBMwp2XnXGJ0YnAk1UyqUd2g?e=hdxAOK)
+
 ## Funcionalidades
 - Inserir o valor total da conta e o número de pessoas
 - Calcular o valor da conta por pessoa de forma reativa
